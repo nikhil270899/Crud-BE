@@ -1,0 +1,11 @@
+First install mongoose 
+Connect mongoose
+in models folder
+Define a Scheme -> which is the stucture of data being stored in collecction
+eg : const contactSchema = {
+   email: String,
+   query: String,
+}; 
+Then we have to create a model using that schema which is then used to store data in a document as objects.
+const Contact = mongoose.model("Contact", contactSchema);
+
